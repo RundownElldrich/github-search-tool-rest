@@ -1,0 +1,70 @@
+{
+  "name": "github-search-tool-rest",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://RundownElldrich.github.io/github-search-tool-rest",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/axios": "^0.14.0",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "^6.1.2",
+    "@types/react-redux": "^7.1.7",
+    "@types/redux-saga": "^0.10.5",
+    "axios": "^0.21.1",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "react": "^16.8.0",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-hook-form": "^7.12.2",
+    "react-redux": "^7.2.0",
+    "react-scripts": "4.0.3",
+    "redux-logger": "^3.0.6",
+    "redux-saga": "^1.1.3",
+    "styled-components": "^5.3.0",
+    "typescript": "~4.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/redux-logger": "^3.0.9",
+    "@types/styled-components": "^5.1.12",
+    "@types/tape": "^4.13.2",
+    "@typescript-eslint/eslint-plugin": "^4.29.2",
+    "@typescript-eslint/parser": "^4.29.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0"
+  }
+}
