@@ -1,5 +1,7 @@
-// import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
+import {
+  BORDER_RADIUS_PRIMARY, COLORS, FONT_SIZE_PRIMARY, LETTER_SPACING_PRIMARY,
+} from './constants';
 
 const GlobalStyle = createGlobalStyle`
 *,
@@ -10,6 +12,17 @@ const GlobalStyle = createGlobalStyle`
 
 html {
   font-size: 10px;
+  --color-white: ${COLORS.white};
+  --color-black: ${COLORS.black};
+  --color-very-light-grey: ${COLORS.verylightGrey};
+  --color-light-grey: ${COLORS.lightGrey};
+  --color-grey: ${COLORS.grey};
+  --color-blue: ${COLORS.blue};
+  --color-blue-with-opacity: ${COLORS.blueWithOpacity};
+  --color-red: ${COLORS.red};
+  --font-size-primary: ${FONT_SIZE_PRIMARY};
+  --letter-spacing-primary: ${LETTER_SPACING_PRIMARY};
+  --border-radius-primary: ${BORDER_RADIUS_PRIMARY};
 }
 
 body,

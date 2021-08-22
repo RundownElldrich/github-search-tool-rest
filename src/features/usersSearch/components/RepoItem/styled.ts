@@ -5,10 +5,10 @@ export const Wrapper = styled.div`
   flex-direction: column;
   margin: 1rem 2.2rem 1rem 4rem;
   padding: 0.8rem 0.6rem;
-  background-color: #D2D2D2;
-  border: 0.2rem solid #D2D2D2;
-  border-radius: 0.2rem;
-  font-size: 1.5rem;
+  background-color: var(--color-light-grey);
+  border: 0.2rem solid var(--color-light-grey);
+  border-radius: var(--border-radius-primary);
+  font-size: var(--font-size-primary);
 `;
 
 export const DetailsRow = styled.div`
@@ -20,21 +20,21 @@ export const DetailsRow = styled.div`
 
 export const NameLabel = styled.p`
   font-size: 1.6rem;
-  letter-spacing: 0.03rem;
+  letter-spacing: var(--letter-spacing-primary);
   font-weight: bold;
-  color: black;
+  color: var(--color-black);
   text-decoration: none;
   word-wrap: break-word;
   max-width: 85%;
 `;
 
 export const Description = styled.p`
-  font-size: 1.5rem;
-  letter-spacing: 0.03rem;
+  font-size: var(--font-size-primary);
+  letter-spacing: var(--letter-spacing-primary);
 `;
 
 export const StarCounter = styled.p`
-  font-size: 1.5rem;
+  font-size: var(--font-size-primary);
   display: flex;
   align-items: center;
   justify-content: center;

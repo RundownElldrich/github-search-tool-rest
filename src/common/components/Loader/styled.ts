@@ -7,7 +7,7 @@ export const LoaderOverlay = styled.div`
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #2D9CDB40;
+  background-color: var(--color-blue-with-opacity);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,9 +17,9 @@ export const LoaderOverlay = styled.div`
 export const LoaderMessage = styled.span`
   width: max-content;
   padding: 2.2rem 3.2rem;
-  background: #fff;
+  background-color: var(--color-white);
   font-size: 2.2rem;
-  border: 0.4rem solid #2D9CDB;
+  border: 0.4rem solid var(--color-light-grey);
   border-radius: 0.4rem;
   display: flex;
   align-items: center;

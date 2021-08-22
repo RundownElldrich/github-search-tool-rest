@@ -6,16 +6,16 @@ export const Wrapper = styled.div`
   align-items: center;
   padding: 1rem;
   margin: 1rem 2.2rem;
-  background-color: #F2F2F2;
-  border: 0.2rem solid #F2F2F2;
-  border-radius: 0.2rem;
-  font-size: 1.5rem;
+  background-color: var(--color-very-light-grey);
+  border: 0.2rem solid var(--color-very-light-grey);
+  border-radius: var(--border-radius-primary);
+  font-size: var(--font-size-primary);
   cursor: pointer;
 `;
 
 export const LoginLabel = styled.p`
-  font-size: 1.5rem;
-  letter-spacing: 0.03rem;
+  font-size: var(--font-size-primary);
+  letter-spacing: var(--letter-spacing-primary);
 `;
 
 export const ArrowIcon = styled.i`
@@ -37,11 +37,11 @@ export const ArrowIcon = styled.i`
   
   &::before {
     top:0;
-    border-top-color: black;
+    border-top-color: var(--color-black);
   }
 
   &::after {
     top:-0.3rem;
-    border-top-color: #F2F2F2;
+    border-top-color: var(--color-very-light-grey);
   }
 `;

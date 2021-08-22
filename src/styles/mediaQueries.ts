@@ -1,12 +1,7 @@
-export const breakpoints = {
-  sm: 480,
-  md: 760,
-  lg: 1200,
-  xl: 1920,
-};
+import { BREAKPOINTS } from 'styles/constants';
 
 export const mediaQueries = (
-  key: keyof typeof breakpoints,
+  key: keyof typeof BREAKPOINTS,
 ) => (
   style: TemplateStringsArray | String,
-) => `@media (min-width: ${breakpoints[key]}px) { ${style} }`;
+) => `@media (min-width: ${BREAKPOINTS[key]}px) { ${style} }`;

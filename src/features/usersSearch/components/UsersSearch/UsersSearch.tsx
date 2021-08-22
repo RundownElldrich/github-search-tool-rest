@@ -8,7 +8,7 @@ import UsersSearchForm from 'features/usersSearch/components/UsersSearchForm/Use
 import UserItem from 'features/usersSearch/components/UserItem/UserItem';
 import Loader from 'common/components/Loader/Loader';
 
-import { ResultsLabel, Wrapper } from './styled';
+import { Card, ResultsLabel, Wrapper } from './styled';
 
 export default function UsersSearch() {
   const usersList = useAppSelector(selectUsersList);
@@ -23,18 +23,20 @@ export default function UsersSearch() {
   return (
     <Wrapper>
       {isLoading && <Loader message="Loading users" />}
-      <UsersSearchForm />
-      {!!usersList.length && (
+      <Card>
+        <UsersSearchForm />
+        {!!usersList.length && (
         <ResultsLabel>
           Showing users for
           &quot;
           {login}
           &quot;
         </ResultsLabel>
-      )}
-      {usersList.map((user: IUser) => (
-        <UserItem key={user.id} content={user} />
-      ))}
+        )}
+        {usersList.map((user: IUser) => (
+          <UserItem key={user.id} content={user} />
+        ))}
+      </Card>
     </Wrapper>
   );
 }
